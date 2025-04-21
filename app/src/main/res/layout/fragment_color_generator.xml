@@ -54,16 +54,6 @@
 
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/toggleBottomSheet"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:clickable="false"
-                android:layout_marginLeft="10dp"
-                android:focusable="false"
-                android:background="?selectableItemBackgroundBorderless"
-                app:srcCompat="@drawable/ic_vector_dots_vertical" />
-
         </LinearLayout>
 
         <View
