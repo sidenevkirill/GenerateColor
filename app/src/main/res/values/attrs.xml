@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorBackgroundCard" format="color" />
+    <attr name="colorBackgroundCardImage" format="color" />
+    <attr name="colorImage" format="color" />
+    <attr name="colorNav" format="color" />
+    <attr name="backgroundNav" format="reference" />
+</resources>

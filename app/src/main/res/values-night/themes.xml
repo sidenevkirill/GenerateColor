@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GenerateRandom" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#141414</item> -->
+        <item name="colorBackgroundCard">#000000</item> -->
+        <item name="colorBackgroundCardImage">?colorPrimaryDark</item>
+        <item name="colorImage">#ffffff</item>
+        <item name="colorNav">#000000</item>
+        <item name="backgroundNav">@style/App.Custom.Indicator</item>
+
+        <item name="android:navigationBarColor">?colorPrimaryDark</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#242424</item>
+    </style>
+</resources>
