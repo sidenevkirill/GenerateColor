@@ -202,7 +202,7 @@
                     android:singleLine="true"
                     android:textSize="16sp"
                     android:textColor="?colorImage"
-                    android:text="Тема приложения" />
+                    android:text="Сменить тему" />
             </LinearLayout>
 
         </LinearLayout>

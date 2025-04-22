@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/home"
-        android:title="Перейти к другому Activity" />
+        android:id="@+id/main_copy"
+        android:title="Копировать цвет"
+        android:icon="@drawable/content_copy"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/main_save"
+        android:title="Копировать цвет"
+        android:icon="@drawable/ic_vector_download_outline"
+        app:showAsAction="always" />
 </menu>

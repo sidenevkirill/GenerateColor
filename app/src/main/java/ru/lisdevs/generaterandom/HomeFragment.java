@@ -5,6 +5,7 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -14,6 +15,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import androidx.palette.graphics.Palette;
 
@@ -157,7 +159,7 @@ public class HomeFragment extends Fragment {
         theme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //
+                toggleTheme();
                 bottomSheetDialog.dismiss();
             }
         });
@@ -191,5 +193,26 @@ public class HomeFragment extends Fragment {
         startActivity(intent);
     }
 
+    private void toggleTheme() {
+        // Получаем SharedPreferences
+        SharedPreferences preferences = requireActivity().getSharedPreferences(PREFS_NAME, getContext().MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+
+        // Получаем текущий режим темы
+        int currentMode = AppCompatDelegate.getDefaultNightMode();
+
+        if (currentMode == AppCompatDelegate.MODE_NIGHT_NO) {
+            // Переключаем на темную тему
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            editor.putInt(KEY_THEME, AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            // Переключаем на светлую тему
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            editor.putInt(KEY_THEME, AppCompatDelegate.MODE_NIGHT_NO);
+        }
+
+        // Применяем изменения
+        editor.apply();
+    }
 
 }

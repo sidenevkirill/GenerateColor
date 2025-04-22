@@ -35,6 +35,7 @@ dependencies {
     implementation ("androidx.palette:palette:1.0.0")
     implementation ("com.github.bumptech.glide:glide:4.12.0")
     implementation ("androidx.preference:preference:1.1.1")
+    implementation(libs.recyclerview)
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
     implementation(libs.appcompat)
     implementation(libs.material)

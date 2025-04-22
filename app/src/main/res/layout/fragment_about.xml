@@ -32,7 +32,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginTop="140dp"
+                            android:layout_marginTop="146dp"
                             android:text="Railcinec"
                             android:textColor="?colorImage"
                             android:textAlignment="center"
@@ -100,7 +100,7 @@
                                                     android:singleLine="true"
                                                     android:textSize="16sp"
                                                     android:textColor="?colorImage"
-                                                    android:text="rustore"
+                                                    android:text="Мы в Rustore"
                                                     android:textStyle="bold"/>
                                         </LinearLayout>
 
@@ -158,7 +158,7 @@
                                                     android:singleLine="true"
                                                     android:textSize="16sp"
                                                     android:textColor="?colorImage"
-                                                    android:text="Паблик ВК"
+                                                    android:text="Паблик ВКонтакте"
                                                     android:textStyle="bold"/>
                                         </LinearLayout>
 
@@ -216,7 +216,7 @@
                                                     android:singleLine="true"
                                                     android:textSize="16sp"
                                                     android:textColor="?colorImage"
-                                                    android:text="Telegram"
+                                                    android:text="Telegram Канал"
                                                     android:textStyle="bold"/>
                                         </LinearLayout>
 
@@ -276,7 +276,7 @@
                                                     android:singleLine="true"
                                                     android:textSize="16sp"
                                                     android:textColor="?colorImage"
-                                                    android:text="site"
+                                                    android:text="Наш сайт"
                                                     android:textStyle="bold"/>
                                         </LinearLayout>
 
@@ -294,7 +294,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginTop="480dp"
                             android:minHeight="72dp"
-                            android:id="@+id/tvGp"
+                            android:id="@+id/gp"
                             android:orientation="horizontal"
                             android:paddingLeft="16dp"
                             android:paddingTop="8dp"

@@ -29,8 +29,17 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.item_generated_color:
                             changeFragment(new HomeFragment());
                             break;
+
                         case R.id.item_generated_color_image:
                             changeFragment(new ColorGeneratorFragment());
+                            break;
+
+                        case R.id.item_color_picker:
+                            changeFragment(new ColorPickerFragment());
+                            break;
+
+                        case R.id.item_favorite:
+                            changeFragment(new FavoritesFragment());
                             break;
                     }
                     return true;

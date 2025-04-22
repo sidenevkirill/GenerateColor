@@ -3,12 +3,22 @@
 
     <item
         android:id="@+id/item_generated_color"
-        android:icon="@drawable/home"
+        android:icon="@drawable/item_home_selector"
         android:title="Главная" />
 
     <item
         android:id="@+id/item_generated_color_image"
-        android:icon="@drawable/palette_24px"
+        android:icon="@drawable/item_palete_selector"
         android:title="Палитра" />
+
+    <item
+        android:id="@+id/item_color_picker"
+        android:icon="@drawable/colors_24px"
+        android:title="Цвета" />
+
+    <item
+        android:id="@+id/item_favorite"
+        android:icon="@drawable/item_heart_selector"
+        android:title="Избранное" />
 
 </menu>

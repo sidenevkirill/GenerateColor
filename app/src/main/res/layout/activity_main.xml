@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0.5dp"
         android:layout_gravity="bottom"
-        android:background="#26999999" />
+        android:background="?colorBackgroundCardImage" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
@@ -31,7 +31,7 @@
         android:layout_gravity="start"
         android:background="?colorPrimaryDark"
         app:itemActiveIndicatorStyle="?backgroundNav"
-        app:labelVisibilityMode="unlabeled"
+        app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
 
 </LinearLayout>

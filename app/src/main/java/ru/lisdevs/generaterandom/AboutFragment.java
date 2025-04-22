@@ -43,6 +43,9 @@ public class AboutFragment extends Fragment {
 
         LinearLayout tg = (LinearLayout) root.findViewById(R.id.tvTg);
         LinearLayout vk = (LinearLayout) root.findViewById(R.id.vk);
+        LinearLayout gp = (LinearLayout) root.findViewById(R.id.gp);
+        LinearLayout ru = (LinearLayout) root.findViewById(R.id.tvRu);
+        LinearLayout site = (LinearLayout) root.findViewById(R.id.site);
 
         tg.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -60,6 +63,36 @@ public class AboutFragment extends Fragment {
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
                 intent.setData(Uri.parse("https://vk.com/club223400185"));
+                startActivity(intent);
+            }
+        });
+
+        gp.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=ru.lisdevs.generaterandom"));
+                startActivity(intent);
+            }
+        });
+
+        ru.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.rustore.ru/catalog/app/ru.lisdevs.generaterandom"));
+                startActivity(intent);
+            }
+        });
+
+        site.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.rustore.ru/catalog/app/ru.lisdevs.generaterandom"));
                 startActivity(intent);
             }
         });
