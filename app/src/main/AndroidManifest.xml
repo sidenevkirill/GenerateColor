@@ -27,8 +27,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SettingsActivity"/>
-        <activity android:name=".AboutActivity"/>
+        <activity android:name=".activity.settings.SettingsActivity"/>
+        <activity android:name=".activity.about.AboutActivity"/>
 
     </application>
 

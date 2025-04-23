@@ -8,17 +8,17 @@
 
     <item
         android:id="@+id/item_generated_color_image"
+        android:icon="@drawable/colors_24px"
+        android:title="Генератор" />
+
+    <item
+        android:id="@+id/item_color_picker"
         android:icon="@drawable/item_palete_selector"
         android:title="Палитра" />
 
     <item
-        android:id="@+id/item_color_picker"
-        android:icon="@drawable/colors_24px"
-        android:title="Цвета" />
-
-    <item
         android:id="@+id/item_favorite"
-        android:icon="@drawable/item_heart_selector"
-        android:title="Избранное" />
+        android:icon="@drawable/history"
+        android:title="История" />
 
 </menu>

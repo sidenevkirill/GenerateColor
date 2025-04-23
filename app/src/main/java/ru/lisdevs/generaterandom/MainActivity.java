@@ -9,16 +9,24 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import ru.lisdevs.generaterandom.activity.about.AboutActivity;
+import ru.lisdevs.generaterandom.activity.favorites.FavoritesPagerFragment;
+import ru.lisdevs.generaterandom.activity.generation.ColorGenerationFragment;
+import ru.lisdevs.generaterandom.activity.home.HomeFragment;
+import ru.lisdevs.generaterandom.activity.palette.ColorPickerFragment;
+import ru.lisdevs.generaterandom.activity.settings.SettingsActivity;
+import ru.lisdevs.generaterandom.activity.view.ViewPagerFragment;
+
 public class MainActivity extends AppCompatActivity {
 
-    private ColorGeneratorFragment colorGeneratorFragment;
+    private ColorGenerationFragment colorGenerationFragment;
     private HomeFragment homeFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        colorGeneratorFragment = new ColorGeneratorFragment();
+        colorGenerationFragment = new ColorGenerationFragment();
         homeFragment = new HomeFragment();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
@@ -31,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                         case R.id.item_generated_color_image:
-                            changeFragment(new ColorGeneratorFragment());
+                            changeFragment(new ViewPagerFragment());
                             break;
 
                         case R.id.item_color_picker:
@@ -39,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                         case R.id.item_favorite:
-                            changeFragment(new FavoritesFragment());
+                            changeFragment(new FavoritesPagerFragment());
                             break;
                     }
                     return true;

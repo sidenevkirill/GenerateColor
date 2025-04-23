@@ -47,7 +47,7 @@
                         android:singleLine="true"
                         android:textSize="22sp"
                         android:textColor="?colorImage"
-                        android:text="Цвета" />
+                        android:text="Палитра" />
 
                 </LinearLayout>
 
@@ -75,4 +75,5 @@
         android:verticalSpacing="10dp"
         android:horizontalSpacing="10dp"
         android:stretchMode="columnWidth" />
+
 </FrameLayout>
